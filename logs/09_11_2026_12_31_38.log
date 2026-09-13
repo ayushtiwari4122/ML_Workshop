@@ -1,0 +1,4 @@
+[2026-09-11 12:31:38,769] 23 __main__ - INFO -Data Ingestion Started
+[2026-09-11 12:31:38,795] 26 __main__ - INFO -Data read successfully, shape: (df.shape)
+[2026-09-11 12:31:38,834] 31 __main__ - INFO -Performing Train-Test-Split
+[2026-09-11 12:31:39,998] 37 __main__ - INFO -Data Ingestion Completed...

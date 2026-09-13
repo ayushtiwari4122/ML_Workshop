@@ -1,0 +1,4 @@
+[2026-09-11 09:14:57,943] 23 __main__ - INFO -Data Ingestion Started
+[2026-09-11 09:14:57,985] 26 __main__ - INFO -Data read successfully, shape: (df.shape)
+[2026-09-11 09:14:58,022] 31 __main__ - INFO -Performing Train-Test-Split
+[2026-09-11 09:14:58,065] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\components\data_ingestion.py]at line number: [32]with error message: [Found input variables with inconsistent numbers of samples: [100, 1]]

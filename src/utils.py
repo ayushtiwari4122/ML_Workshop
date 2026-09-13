@@ -1,0 +1,42 @@
+import os
+import sys
+import pickle
+from sklearn.metrics import accuracy_score
+from src.exception import CustomException
+from src.logger import get_logger
+logger = get_logger(__name__)
+
+# exporting file function:::
+def save_object(file_path: str, obj) -> None :
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            pickle.dump(obj, file_obj)
+        logger.info(f"Object saved successfully at: (file_path)")
+    except Exception as e:
+        raise CustomException(e, sys)
+
+
+# import logic:::
+def load_object(file_path: str) -> Any:
+    try:
+        with open(file_path, "rb") as file_obj:
+            return pickle.load(file_obj)
+    except Exception as e:
+        raise CustomException(e, sys)
+
+
+#making function to get best model among all(Model_Evaluation):::
+def evaluate_models(x_train, y_train, x_test, y_test, models:dict)-> dict:
+    try:
+        report={}
+        for model_name, model in models.items():
+            model.fit(x_train, y_train)
+            y_pred = model.predict(x_test)
+            test_accuracy = accuracy_score(y_test, y_pred)
+            report[model_name] = test_accuracy
+            logger.info(f"{model_name} -> Test Accuracy: {test_accuracy:.2f}" )
+            return report
+    except Exception as e:
+        raise CustomException(e, sys)
