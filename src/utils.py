@@ -1,6 +1,7 @@
 import os
 import sys
 import pickle
+from typing import Any
 from sklearn.metrics import accuracy_score
 from src.exception import CustomException
 from src.logger import get_logger
@@ -28,7 +29,7 @@ def load_object(file_path: str) -> Any:
 
 
 #making function to get best model among all(Model_Evaluation):::
-def evaluate_models(x_train, y_train, x_test, y_test, models:dict)-> dict:
+def evaluate_models(x_train, y_train, x_test, y_test, models:dict)-> None:
     try:
         report={}
         for model_name, model in models.items():
