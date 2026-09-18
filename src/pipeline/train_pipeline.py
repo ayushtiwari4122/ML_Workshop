@@ -28,3 +28,6 @@ def run_training_pipeline() -> None:
 
 if __name__ == '__main__':
     run_training_pipeline()
+
+
+# TRAINING PIPELINE COMPLETED

@@ -54,3 +54,7 @@ class ModelTrainer:
 if __name__ == "__main__":
     obj = ModelTrainer()
     obj.initiate_model_trainer('artifacts/train.csv', 'artifacts/test.csv')
+
+
+
+# MODEL TRAINING COMPLETED
