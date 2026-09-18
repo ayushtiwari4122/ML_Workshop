@@ -1,4 +1,0 @@
-[2026-09-15 12:36:34,589] 63 __main__ - INFO -Train and Test data loaded for transformation
-[2026-09-15 12:36:34,599] 54 __main__ - INFO -preprocessor object created successfully...
-[2026-09-15 12:36:34,600] 72 __main__ - INFO -Applying preprocessing on train and tet data
-[2026-09-15 12:36:34,719] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\components\data_transformation.py]at line number: [75]with error message: [All estimators should implement fit and transform, or can be 'drop' or 'passthrough' specifiers. 'Pipeline(steps=[{'imputer', SimpleImputer()}])' (type <class 'sklearn.pipeline.Pipeline'>) doesn't.]

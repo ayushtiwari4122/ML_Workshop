@@ -1,0 +1,6 @@
+[2026-09-18 17:06:29,224] 12 __main__ - INFO -Training Pipline Started...
+[2026-09-18 17:06:29,225] 23 src.components.data_ingestion - INFO -Data Ingestion Started
+[2026-09-18 17:06:29,242] 26 src.components.data_ingestion - INFO -Data read successfully, shape: (df.shape)
+[2026-09-18 17:06:29,253] 31 src.components.data_ingestion - INFO -Performing Train-Test-Split
+[2026-09-18 17:06:29,343] 37 src.components.data_ingestion - INFO -Data Ingestion Completed...
+[2026-09-18 17:06:29,343] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\pipeline\train_pipeline.py]at line number: [19]with error message: ['DataTransformation' object has no attribute 'initiate_data_transformation']

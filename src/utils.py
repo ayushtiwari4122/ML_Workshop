@@ -14,7 +14,7 @@ def save_object(file_path: str, obj) -> None :
         os.makedirs(dir_path, exist_ok=True)
         with open(file_path, "wb") as file_obj:
             pickle.dump(obj, file_obj)
-        logger.info(f"Object saved successfully at: (file_path)")
+        logger.info(f"Object saved successfully at: {file_path}")
     except Exception as e:
         raise CustomException(e, sys)
 
@@ -38,6 +38,6 @@ def evaluate_models(x_train, y_train, x_test, y_test, models:dict)-> None:
             test_accuracy = accuracy_score(y_test, y_pred)
             report[model_name] = test_accuracy
             logger.info(f"{model_name} -> Test Accuracy: {test_accuracy:.2f}" )
-            return report
+        return report
     except Exception as e:
         raise CustomException(e, sys)

@@ -1,0 +1,14 @@
+[2026-09-18 17:29:16,235] 11 __main__ - INFO -Training Pipline Started...
+[2026-09-18 17:29:16,236] 23 src.components.data_ingestion - INFO -Data Ingestion Started
+[2026-09-18 17:29:16,240] 26 src.components.data_ingestion - INFO -Data read successfully, shape: (df.shape)
+[2026-09-18 17:29:16,249] 31 src.components.data_ingestion - INFO -Performing Train-Test-Split
+[2026-09-18 17:29:16,323] 37 src.components.data_ingestion - INFO -Data Ingestion Completed...
+[2026-09-18 17:29:16,333] 63 src.components.data_transformation - INFO -Train and Test data loaded for transformation
+[2026-09-18 17:29:16,336] 54 src.components.data_transformation - INFO -preprocessor object created successfully...
+[2026-09-18 17:29:16,336] 72 src.components.data_transformation - INFO -Applying preprocessing on train and test data
+[2026-09-18 17:29:16,371] 17 src.utils - INFO -Object saved successfully at: artifacts\preprocessor.pkl
+[2026-09-18 17:29:16,371] 85 src.components.data_transformation - INFO -Preprocessor object saved as preprocessor.pkl
+[2026-09-18 17:29:16,372] 24 src.components.model_trainer - INFO -Splitting train and test input data
+[2026-09-18 17:29:16,373] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\utils.py]at line number: [36]with error message: [y should be a 1d array, got an array of shape (80, 9) instead.]
+[2026-09-18 17:29:16,373] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\components\model_trainer.py]at line number: [37]with error message: [Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\utils.py]at line number: [36]with error message: [y should be a 1d array, got an array of shape (80, 9) instead.]]
+[2026-09-18 17:29:16,374] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\pipeline\train_pipeline.py]at line number: [22]with error message: [Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\components\model_trainer.py]at line number: [37]with error message: [Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\utils.py]at line number: [36]with error message: [y should be a 1d array, got an array of shape (80, 9) instead.]]]

@@ -1,4 +1,0 @@
-[2026-09-15 12:51:02,926] 63 __main__ - INFO -Train and Test data loaded for transformation
-[2026-09-15 12:51:02,934] 54 __main__ - INFO -preprocessor object created successfully...
-[2026-09-15 12:51:02,935] 72 __main__ - INFO -Applying preprocessing on train and tet data
-[2026-09-15 12:51:03,081] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\src\components\data_transformation.py]at line number: [75]with error message: [too many indices for array: array is 0-dimensional, but 1 were indexed]

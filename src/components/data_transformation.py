@@ -56,7 +56,7 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e ,sys)
 
-    def initiate_data_transformer(self, train_path:str, test_path:str) -> None:
+    def initiate_data_transformation(self, train_path:str, test_path:str) -> None:
         try:
             train_df= pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
@@ -69,7 +69,7 @@ class DataTransformation:
             target_feature_test_df = test_df[target_column].map({"Yes":1 , "No":0})
 
             preprocessor_obj = self.get_data_transformer_object()
-            logger.info("Applying preprocessing on train and tet data")
+            logger.info("Applying preprocessing on train and test data")
 
             # Array of input features 
             input_feature_train_arr = preprocessor_obj.fit_transform(input_feature_train_df)
@@ -95,6 +95,6 @@ class DataTransformation:
 
 if __name__ =="__main__":
     obj = DataTransformation()
-    obj.initiate_data_transformer('artifacts/train.csv', 'artifacts/test.csv')
+    obj.initiate_data_transformation('artifacts/train.csv', 'artifacts/test.csv')
             
 

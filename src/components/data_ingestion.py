@@ -22,7 +22,7 @@ class DataIngestion:
     def initiate_data_ingestion(self) ->None:
         logger.info("Data Ingestion Started")
         try:
-            df = pd.read_csv(self.ingestion_config.source_csv_path)``
+            df = pd.read_csv(self.ingestion_config.source_csv_path)
             logger.info("Data read successfully, shape: (df.shape)")
             os.makedirs(
                 os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True
