@@ -1,0 +1,7 @@
+[2026-09-22 19:12:41,655] 28 main - INFO -Predict form page accessed
+[2026-09-22 19:13:01,775] 41 main - INFO -Prediction request recieved: age33, genderMale, fever102.0, coughMild, cityDelhi
+[2026-09-22 19:13:01,782] 37 src.pipeline.predict_pipeline - INFO -Loading Model and Preprocessor
+[2026-09-22 19:13:02,991] 49 src.pipeline.predict_pipeline - INFO -Prediction completed: {result}, confidence_score = {probability}
+[2026-09-22 19:13:13,173] 41 main - INFO -Prediction request recieved: age33, genderMale, fever102.0, coughMild, cityDelhi
+[2026-09-22 19:13:13,174] 37 src.pipeline.predict_pipeline - INFO -Loading Model and Preprocessor
+[2026-09-22 19:13:13,190] 49 src.pipeline.predict_pipeline - INFO -Prediction completed: {result}, confidence_score = {probability}

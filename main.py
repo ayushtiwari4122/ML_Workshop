@@ -23,12 +23,12 @@ async def home(request:Request):
     return templates.TemplateResponse(request, "index.html")
 
 
-@app.get("/predict", response_class=HTMLResponse):
+@app.get("/predict", response_class=HTMLResponse)
 async def predict_form(request:Request):
     logger.info("Predict form page accessed")
-    return templates.TemplateResponse(request, "predict.html", {"result: None"})
+    return templates.TemplateResponse(request, "predict.html", {"result": None})
 
-@app.post("/predict", responses=HTMLResponse)
+@app.post("/predict", response_class=HTMLResponse)
 async def predict_resuult(
     request: Request,
     age:int = Form(...),
@@ -38,7 +38,7 @@ async def predict_resuult(
     city: str = Form(...)
 ):
     try:
-        logger.ingo(f"Prediction request recieved: age{age}, gender{gender}, fever{fever}, cough{cough}, city{city}")
+        logger.info(f"Prediction request recieved: age{age}, gender{gender}, fever{fever}, cough{cough}, city{city}")
         custom_data = CustomData(age=age, gender=gender, fever=fever, cough=cough, city=city)
         data_df = custom_data.get_data_as_dataframe()
         predict_pipeline = PredictPipeline()
