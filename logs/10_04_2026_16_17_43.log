@@ -1,0 +1,49 @@
+[2026-10-04 16:18:38,054] 26 main - INFO -Home page accessed...
+[2026-10-04 16:20:18,158] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\nlp_pretrained\ner_tagger.py]at line number: [10]with error message: [
+**********************************************************************
+  Resource 'averaged_perceptron_tagger_eng' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'taggers/averaged_perceptron_tagger_eng/'
+
+  Searched in:
+    - 'C:\\Users\\Ayush/nltk_data'
+    - 'C:\\Users\\Ayush\\OneDrive\\Desktop\\WORKSHOP\\.venv\\nltk_data'
+    - 'C:\\Users\\Ayush\\OneDrive\\Desktop\\WORKSHOP\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\Ayush\\OneDrive\\Desktop\\WORKSHOP\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\Ayush\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+]
+[2026-10-04 16:20:18,159] 152 main - INFO -Error occured in pretrained nlp analysis
+[2026-10-04 16:24:08,272] 20 src.exception - ERROR -Error occured in python script: [C:\Users\Ayush\OneDrive\Desktop\WORKSHOP\nlp_pretrained\ner_tagger.py]at line number: [10]with error message: [
+**********************************************************************
+  Resource 'averaged_perceptron_tagger_eng' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'taggers/averaged_perceptron_tagger_eng/'
+
+  Searched in:
+    - 'C:\\Users\\Ayush/nltk_data'
+    - 'C:\\Users\\Ayush\\OneDrive\\Desktop\\WORKSHOP\\.venv\\nltk_data'
+    - 'C:\\Users\\Ayush\\OneDrive\\Desktop\\WORKSHOP\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\Ayush\\OneDrive\\Desktop\\WORKSHOP\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\Ayush\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+]
+[2026-10-04 16:24:08,273] 152 main - INFO -Error occured in pretrained nlp analysis
