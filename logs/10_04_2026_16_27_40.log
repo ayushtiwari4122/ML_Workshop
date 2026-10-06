@@ -3,7 +3,7 @@
   Resource 'maxent_ne_chunker_tab' not found.
   Please use the NLTK Downloader to obtain the resource:
 
-  >>> import nltk
+  >>import nltk
   >>> nltk.download('maxent_ne_chunker_tab')
 
   For more information see: https://www.nltk.org/data.html
