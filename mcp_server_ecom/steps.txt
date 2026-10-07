@@ -9,3 +9,7 @@ DB --> products with their user-id
 fastmcp ---> remotely on our mcp server
 
 main.py file --> fastapi initialize --> fastmcp server remote url use --> as an client
+
+
+WORKING MANNER:
+Fast Api URL Hit --> MCP server URL hit --> Tool Call(function create using @mcp.tool)

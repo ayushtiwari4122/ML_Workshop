@@ -35,5 +35,14 @@ def check_refund_elegibilty(order_id:str):
         return {"error": f"Order {order_id} not found..."}
 
     order_date = datetime.strptime(order['order_date'], "%Y-%m-%d")
-    days_passed = (datetime(2026))
+    days_passed = (datetime(2026,9,15) - order_date).days
+    eligible = order['status'] == "DElivered" and days_passed <= 7
+    return {
+        "order_id ": order_id.upper(),
+        "eligible": eligible,
+        "days_since_order": days_passed,
+        "reason": "Delivered with in 7 days" if eligible else "Not eliggible"
+    }
 
+if __name__ == "__main__":
+    mcp.run(transport="http", host="0.0.0.0", port=8001)
