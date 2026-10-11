@@ -82,5 +82,45 @@ If a tool can answer the question , use that tool
                     exclude_none = True
                 )
             )
+            tools_used =[]
 
-            # next update  for ai_agent and 10 mcp server making pending
+
+            # EXECUTE MCP TOOLS:
+            for tool_call in message.tool_calls:
+                tool_name = tool_call.function.name
+                arguments = json.dump(
+                    tool_call.funtion.arguments
+                )
+
+                result = await client.call_tool(
+                    tool_name,
+                    arguments
+                )
+                if hasattr(result, "data"):
+                    tool_result = result.data
+                else:
+                    tool_result = str(result)
+
+                # SEND MCP RESULT TO GROQ--
+                messages.append(
+                    {
+                        "role": "tool",
+                        "tool_call_id": tool_call.id,
+                        "name": tool_name,
+                        "content": json.dump(
+                            tool_result,
+                            default=str
+                        )
+                    }
+                )
+
+                # FINAL GROQ CALL--
+                final_response = groq.chat.completions.create(
+                    model = GROQ_MODEL,
+                    messages= messages,
+                    tool_choice= "none"
+                )
+                return {
+                    "answer": final_response.choices[0].message.content,
+                    "tool_used": tools_used
+                }
