@@ -55,4 +55,5 @@ def build_chunks(source_dir: str, chunk_size:int, chunk_overlap:int):
 
     except Exception as e:
         raise CustomException(e, sys)
-    
+
+    # RAG_IMPLEMENTATION
