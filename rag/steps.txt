@@ -1,0 +1,19 @@
+RAG ---> Retrieval Augmented Generation
+
+E-commerece platform ---> user->"what is the price of this"  ---> json format
+
+Customer Support ---> RAG ---> LLM communicate + DB information
+
+mysql/mongodb ---> Vector DB(chromadb, pinecone, faiss)
+
+WORKING PROCESS OF RAG ---
+Text of Documents ---> Chunking ---> Embedding(Hugging Phase, TF-IDF) ---> Store in VectorDB
+
+User Query ---> Embedding ---> V.DB ---> relevant chunks extraction --->
+Send to LLM ---> Proper format convert response return 
+
+
+
+CHUNK_OVERLAP EXAMPLE:::
+i love python. js is good and it is used for web developement.
+chunks-> 'i lovee python', 'python js is', 'is good and', 'and it is','is used for', 'for web developement'
