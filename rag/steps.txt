@@ -17,3 +17,12 @@ Send to LLM ---> Proper format convert response return
 CHUNK_OVERLAP EXAMPLE:::
 i love python. js is good and it is used for web developement.
 chunks-> 'i lovee python', 'python js is', 'is good and', 'and it is','is used for', 'for web developement'
+
+
+###
+
+EMBEDDING--->
+'0.1','0.5','4.1'.....
+
+Store in Vector DB--->
+[['0.1','0.5','4.1'],[....],...]
