@@ -1,0 +1,20 @@
+knowledge_base:
+  source_dir: "rag/knowledge_base"
+  chunk_size: 300
+  chunk_overlap: 60
+
+vector_store:
+  vectorizer_path: "rag/vector_store/vectorizer.pkl"
+  faiss_index_path: "rag/vector_store/faiss_index.bin"
+  chunks_metadaata_path: "rag/artifacts/chunks_metadata.pkl"
+
+
+retrieval:
+  top_k: 3
+  min_similarity: 0.06
+
+generation:
+  model_name: "openai/gpt-oss-20b"
+  max_tokens: 501
+
+  system_prompt:

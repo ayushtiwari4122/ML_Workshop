@@ -26,3 +26,17 @@ EMBEDDING--->
 
 Store in Vector DB--->
 [['0.1','0.5','4.1'],[....],...]
+
+
+
+-------------------------------------
+
+
+---RAG FOLDER---:::
+document_loader.py ----> for loading Documents
+
+vector_stroe.py ---> for storing the chunks embedding into the ---> FAISS VECTOR DB
+
+retirever.py ---> for extracting data(information) from vector DB ---> based on the similarity ---> also giving matadata about chunk , chunk_file, chunk_id, chunk_score...
+
+config/config.yaml ---> for writing the AUTOMATION SCRIPTING for RAG
