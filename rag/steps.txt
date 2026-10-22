@@ -40,3 +40,21 @@ vector_stroe.py ---> for storing the chunks embedding into the ---> FAISS VECTOR
 retirever.py ---> for extracting data(information) from vector DB ---> based on the similarity ---> also giving matadata about chunk , chunk_file, chunk_id, chunk_score...
 
 config/config.yaml ---> for writing the AUTOMATION SCRIPTING for RAG
+
+
+
+
+
+
+
+------------------------------------
+
+main.py  added
+
+.env added
+
+python_dotenv add
+
+template folder clinnic_assistant.html
+
+uvicorn main:app --reload --> to run application
